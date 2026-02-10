@@ -11,7 +11,7 @@ class ServiceBusTui < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.0.2-alpha/service-bus-tui_Darwin_x86_64.tar.gz"
-      sha256 "9b6f931da4d5ac90058552503c36c0fcfd0612c81ebb39a51e9376b4be597d68"
+      sha256 "2fe74546f62f91351295b43ad611a98326636a7ac3f309a5648a13b5e7b98c3f"
 
       def install
         bin.install "service-bus-tui"
@@ -19,7 +19,7 @@ class ServiceBusTui < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.0.2-alpha/service-bus-tui_Darwin_arm64.tar.gz"
-      sha256 "64ce93a3b52e15aed5ddfdb7f9bcd7e3ce8214e7c06becc31c742b7267150634"
+      sha256 "28b665b7062e16425b0a5427514af988fc80357d066d0e083bd07d76dd641b17"
 
       def install
         bin.install "service-bus-tui"
@@ -30,14 +30,14 @@ class ServiceBusTui < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.0.2-alpha/service-bus-tui_Linux_x86_64.tar.gz"
-      sha256 "17aeef636843a4c70ccb945166365dffcc29b9a7e1f2649c9d348ace9542bf7e"
+      sha256 "cde1f13526b56423ad56e99326c158698a16902e68eb3674bc487165446cbf3c"
       def install
         bin.install "service-bus-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.0.2-alpha/service-bus-tui_Linux_arm64.tar.gz"
-      sha256 "aae28237aa92be35bb1499d3159e29fd3a06fd7833d7c20f9cd12ee1a27937a3"
+      sha256 "2ee32cc86a784c223c177459f8f100d969b02aa94531c40d775a00615054cf20"
       def install
         bin.install "service-bus-tui"
       end
