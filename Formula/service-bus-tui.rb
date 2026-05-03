@@ -5,21 +5,21 @@
 class ServiceBusTui < Formula
   desc "A terminal-based explorer for Azure Service Bus"
   homepage "https://github.com/MonsieurTib/service-bus-tui"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.5.0/service-bus-tui_Darwin_x86_64.tar.gz"
-      sha256 "3bd4d4a4bd39dc8c268134e2bb7a29d7e73e8263b674f04c1d790901eabdbc72"
+      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.6.0/service-bus-tui_Darwin_x86_64.tar.gz"
+      sha256 "75cec4d7145057e7a65ac6a59edddab3cdac1f1fce19a23cc523b89d6093d854"
 
       define_method(:install) do
         bin.install "service-bus-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.5.0/service-bus-tui_Darwin_arm64.tar.gz"
-      sha256 "cd52997bd20ed74c3b52c356650780d5f6e69b2cd1643f05ac0e968507538f8b"
+      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.6.0/service-bus-tui_Darwin_arm64.tar.gz"
+      sha256 "d40be10e9800041a40e870d507e4cdb1d455acda47e4a1cc3b0530a0689b1c6b"
 
       define_method(:install) do
         bin.install "service-bus-tui"
@@ -29,15 +29,15 @@ class ServiceBusTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.5.0/service-bus-tui_Linux_x86_64.tar.gz"
-      sha256 "226baae5b1b040ab4acb0d68fe3af927bcbd8ccf71e5d7a87258c4fb7b5409ac"
+      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.6.0/service-bus-tui_Linux_x86_64.tar.gz"
+      sha256 "e316d80cc7085837d40fe39b1a356d62e93e03d6b5d2985de0166f84e4e4276e"
       define_method(:install) do
         bin.install "service-bus-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.5.0/service-bus-tui_Linux_arm64.tar.gz"
-      sha256 "b023edeb6c9b2c603a52399a96a27bb9ae7d8ce74df83f7d456ddb04464dcec1"
+      url "https://github.com/MonsieurTib/service-bus-tui/releases/download/v1.6.0/service-bus-tui_Linux_arm64.tar.gz"
+      sha256 "a3f1ac6f4f45748fd9a8b9cdc73d558aff54bc3d150b5c9e6cca559bd0d602e4"
       define_method(:install) do
         bin.install "service-bus-tui"
       end
